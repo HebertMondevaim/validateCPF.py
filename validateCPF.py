@@ -6,9 +6,6 @@ cpf_input = input("Digite o CPF (pode conter pontos e traços): ")
 cpf_limpo = ''.join(filter(str.isdigit, cpf_input))
 
 # Valida se o cpf consta números repetidos.
-print(cpf_limpo[0])
-print(len(cpf_limpo))
-print(cpf_limpo[0] * len(cpf_limpo))
 valorSequencial = cpf_limpo == cpf_limpo[0] * len(cpf_limpo)
 
 if valorSequencial:
